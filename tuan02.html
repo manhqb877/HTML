@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+            margin : 0px auto;
+            padding: 0px;
+
+        }
+        .wrapper{
+            height: 1200px;
+            width: 1500px;
+            background-color: aqua;
+            border: 1px solid  red ;
+            
+        }
+        .header{
+            height: 250px;
+            width: 1500px;
+            background-color: aqua;
+            border-bottom : solid black ;
+            background-image: url(https://th.bing.com/th?id=OIP.AMT_EqCKWaK0DFZT_AruuQHaFZ&w=292&h=213&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
+        }
+
+        p {
+            line-height: 150px;
+            font-size: 40px;
+            text-align: center;
+            color: blue;
+            top: 20px;
+        }
+
+        p:hover {
+           
+           color: white;
+           
+
+        }
+
+        .nav{
+            height: 60px;
+            width: 1500px;
+            background-color: bisque;
+            border-bottom: solid black;
+        }
+
+        .menu li{
+            position: relative;
+             width: 300px;
+             height: 60px;
+            color: blue;
+            font-size: x-large;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-align: center;
+            
+        }
+        .menu li a{
+                text-decoration: none;
+                font-weight: bolder;
+        }
+        
+        .menu li:hover{
+            background-color: blue;
+
+        }
+        li:hover> a{
+            font-style: initial;
+        }
+
+        .menu li .sub_menu{
+            position: absolute;
+            display: none;
+        }
+
+        .menu li:hover .sub_menu{
+            display: block;
+        }
+
+        .menu li .sub_menu li .sub_menu{
+            display: none;
+        }
+
+        .menu li .sub_menu li:hover .sub_menu{
+            display: block;
+            top: 0px;
+            left: 250px;
+            text-align: center;
+        }
+       .content{
+         height: 800px;
+         width: 1500px;
+         background-color: cornflowerblue;
+         border-bottom: solid black;
+       }
+       .aside{
+         width: 400px; 
+         height: 100%; 
+         border-right : 1px solid black;
+         color: blueviolet; 
+         font-size: 40px;
+         text-align: left; 
+                                  
+       }
+       .section{
+        width: 400px; 
+        height: 100%; 
+        color: rgb(89, 43, 226); 
+        font-size: 40px; 
+        text-align: right;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="header">
+           <p> TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TPHCM
+                                                KHOA CNTT</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                   <ul class="sub_menu">
+                    <li><a href="">IPHONE</a></li>
+                    <li><a href="">MACBOOK</a></li>
+                    <li><a href="">SAMSUNG</a>
+                        <ul class="sub_menu">
+                            <li><a href="">3G</a></li>
+                            <li><a href="">4G</a></li>
+                            <li><a href="">5G</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">GALAXY</a></li>
+                    <li><a href="">NOKIA</a></li>
+                   </ul> 
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+        </div>
+    <div class="content">
+        <div class="aside"> aside </div>
+
+        <div class="section">section</div>
+    </div>
+        <div class="footer" style="color: rgb(120, 40, 40); font-size: 50px"> footer</div>
+    </div>
+    
+header></header>
+</body>
+</html>
