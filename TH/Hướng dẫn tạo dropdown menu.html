@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0px auto; padding: 0px ; box-sizing: border-box;}
+        .wrapper{
+            height: 500px;
+            width: 1168px;
+            background-color: aqua;
+            border: 3px solid red;
+           
+
+        }
+        .header{
+            background-image: 
+            url(https://th.bing.com/th?id=OIP.MUERiNMzSs4du-60fvQ-PQHaEc&w=322&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
+            height: 200px;
+            width: 1168px;
+            display: flex;
+            background-size: contain;
+            display: flex;
+            border-bottom: solid black;
+            color: white;
+            text-align: center;
+        }
+        .nav{
+            height: 40px;
+            width: 1168px;
+            background-color: chartreuse;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            
+        }
+
+        .aside{
+              width: 30%;
+              height: 100%;
+              float: left;
+              font-size: large;
+              background-color: chocolate;
+        }
+
+        .menu{
+            background-color: rgb(226, 43, 43);
+            position: relative;
+            width: 70%;
+            height: 100%;
+            list-style: none;
+            /* float: left; */
+            display: flex;
+        }
+
+        .menu>li{
+            width: 60px;
+            
+        }
+
+        .menu>li>a:hover{
+            background-color: white;
+        }
+
+        
+        .menu>li> a{
+            position: absolute;
+            color: blue;
+            /* border-right: 1px solid rgb(205, 50, 50) ; */
+            text-decoration: none;
+            
+            /* list-style-type: none; */
+            /* float: left; */
+        }
+
+        .sub_menu1{
+            position: absolute;
+            top: 40px;
+            height: 40px;
+            width: 100px; 
+            /* background-color: blue; */
+            
+            display: none;
+        }
+        .sub_menu1>li{
+            /* position: absolute; */
+            padding: 1px 0px;
+            /* top: 40px; */
+        }
+        .menu>li:hover>.sub_menu1{
+            display: block;
+        } 
+        .menu>li>.sub_menu1{
+            list-style-type: none;
+        }
+        .menu>li>.sub_menu1>li{
+            padding: 0px 0px 10px 0px;
+        }
+            .sub_menu1>li:hover{
+                
+                color: darkslategray;
+                background-color: white;
+            }
+            .menu>li>.sub_menu1>li>a{
+                text-decoration: none;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="nav">
+        <div class="aside">KHOA CÔNG NGHỆ THÔNG TIN</div>
+        <ul class="menu">
+                <li><a href="">Giới Thiệu</a></li>
+                <li><a href="">Tuyển Sinh</a></li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Đào Tạo
+                    <ul class="sub_menu1">
+                        <li><a href="">Phổ thông</a></li>
+                        <li><a href="">Đại học</a></li>
+                        <li><a href="">Cao đẳng</a></li>
+                    </ul>
+                
+                </a></li>
+                <li><a href="">Nghiên Cứu</a></li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
