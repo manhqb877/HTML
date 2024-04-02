@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./text.css">
+    <script src="../Thuchanhtuan5/style.js"></script>
+
+</head>
+<body>
+    <h2 align = "center">ĐĂNG KÍ TÀI KHOẢN</h2>
+    <form action="" name="forml" onsubmit = "return SubmitForm();" method="post">
+        <div>
+            <label for="txtDN" class="title">Tên đăng nhập: </label>
+            <input type="text" id="txtDN" onblur="return KiemTraTenDN()" name="txtdn" size="30" placeholder="txtDN">
+            <span id="tendn"></span>
+        </div>
+        <div>
+            <label for="txtMK" class="title">Mật khẩu:</label>
+            <input type="password" id="txtXNMK" onblur="return KiemTraPassWord();" name="txtMK" size="30" placeholder="txtMK">
+            <span id="mk">*</span>
+        </div>
+        <div>
+            <label for="txtXNMK" class="title">Nhập lại mật khẩu:</label>
+            <input type="password" id="txtXNMK" onblur="return KiemTraXacNhanPassWord();" name="txXNMK" size="30" placeholder="txtXNMK" >
+            <span id="xnmk">*</span>
+        </div>
+        <h5 align = "center">THÔNG TIN CÁ NHÂN</h5>
+        <div>
+            <label for="txtName" class="title">Họ và tên:</label>
+            <input type="text" id="txtName" onblur="" name="txName" size="30" placeholder="txtName" >
+            <span id="hoten">* bắt buộc</span>
+        </div>
+        <div>
+            <label for="txtNS" class="title">Ngày sinh:</label>
+            <input type="date" id="txtNS" onblur="return KiemTraNgaySinh();" name="txtNS" size="30" placeholder="txtNS" >
+            <span id="xnmk">*</span>
+        </div>
+        <div>
+            <label for="">Giới tính :</label>
+            <input type="radio" name="giới tính" id="Nam" checked>
+            <input type="radio" name="giới tính" id="Nữ">
+        </div>
+        <div>
+            <button><b>Đăng ký</b></button>
+            <button><b>Huỷ</b></button>
+        </div>
+       
+    </form>
+</body>
+</html>

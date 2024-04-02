@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <style>
+        .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        }
+        .nav-item {
+        flex: 1;
+        text-align: center;
+        }
+        [class*=col-]{
+            padding-left: 0;
+            padding-right: 0;
+            border: 1px solid rosybrown;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btnOpen").click(function(){
+                $("#myModal").modal();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <img src="../img/Logo.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-md-9 col-12">
+                <img src="../img/header.PNG" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <nav class="navbar navbar-expand">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="btnOpen">SERVICE</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">HELP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <table class="table table-bordered table-warning">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>MA SINH VIEN</th>
+                            <th>HO TEN</th>
+                            <th>NGAY SINH</th>
+                            <th>QUE QUAN</th>
+                            <th>LOP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2265845112</td>
+                            <td>Hoang Nguyen Duc Manh</td>
+                            <td>17/08/2004</td>
+                            <td>Quang Binh</td>
+                            <td>DHKTPM18B</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1234567890</td>
+                            <td>NONG DUC MANH</td>
+                            <td>17/09/1940</td>
+                            <td>Ben Tre</td>
+                            <td>DHKTPM18C</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1345678921</td>
+                            <td>Hoang Thi Lan</td>
+                            <td>17/09/1985</td>
+                            <td>Quang Binh</td>
+                            <td>DHKTPM18B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-12">
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Cập nhật danh sách sinh viên</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                <span aria-hidden="true">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="labelMa">Mã sinh viên</label>
+                                    <input type="text" class="form-control" id="txtMa" aria-describedby="txtMa" placeholder="Nhập mã sinh viên">
+                                    <small id="tbMa" class="form-text text-muted">*</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelHT">Họ tên</label>
+                                    <input type="text" class="form-control" id="txtMa" aria-describedby="txtMa" placeholder="Nhập mã sinh viên">
+                                    <small id="tbMa" class="form-text text-muted">*</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="labelMa">Mã sinh viên</label>
+                                    <input type="text" class="form-control" id="txtHT" aria-describedby="txtHT" placeholder="Nhập họ tên">
+                                    <small id="tbMa" class="form-text text-muted">*</small>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Cập nhật</button>
+                            </div>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

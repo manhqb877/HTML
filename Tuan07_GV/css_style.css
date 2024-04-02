@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    font-family:'Roboto';
+    font-size: 16px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-title {
+    flex-basis: 20%;
+  }
+  .col-title p{
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .col-action {
+    flex: 1;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  ul li {
+    width: 20%;
+  }
+  ul li label:hover {
+    cursor: pointer;
+  }
+  ul li label input {
+    display: none;
+  }
+  ul li label input:checked + span::before {
+    background: #037EC8;
+    border: solid 1px #037EC8;
+  }
+  ul li label span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: solid 1px #c2c2c2;
+    background: #FFF;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }

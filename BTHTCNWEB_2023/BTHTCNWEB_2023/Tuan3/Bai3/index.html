@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px auto;
+            margin: 0px auto;
+            box-sizing: border-box;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        ul,li,a{
+            color: rgb(174, 174, 38);
+        }
+        button{
+            background-color: aquamarine;
+        }
+
+
+        .wrapper{
+            width: 1200px;
+            height: 850px;
+            border: 1px solid black;
+            /* background-color: antiquewhite; */
+        }
+
+
+        .header{
+            width: 1200px;
+            height: 50px;
+            background-color: rgb(143, 27, 56);
+            border-bottom: 1px solid black;
+            text-shadow: -10px -5px 5px #fff;
+
+        }
+        nav{
+            color: rgb(189, 125, 30);
+            font-size: 30px;
+            padding-left: 20px;
+        }
+
+
+        .menu{
+            width: 1200px;
+            height: 40px;
+            float: left;
+            border-bottom: 1px solid black;
+        }
+        .menu>ul{
+            width: 800px;
+            height: 40px;
+            float: left;
+        }
+        .menu>ul>li{
+            width: 150px;
+            height: 40px;
+            float: left;
+            list-style: none;
+            padding-top: 4px;
+        }
+        .menu a{
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        .image{
+            background-image: url(../Bai3/line.png);
+            width: 1200px;
+            height: 150px;
+            background-size: contain;
+            float: left;
+        }
+
+
+        .content{
+            width: 1200px;
+            height: 550px;
+            float: left;
+        }
+
+
+        .trai{
+            width: 890px;
+            height: 550px;
+            float: left;
+            border-right: 1px solid black;
+        }
+        h1{
+            width: 890px;
+            height: 40px;
+            float: left;
+            margin-top: 40px;
+            color: rgb(174, 106, 23);
+            padding-left: 5px;
+            margin-left: 10px;
+        }
+
+
+        table{
+             width: 890px;
+            height: 500px;
+            float: left;
+            
+        }
+        th{
+            width: 890px;
+            height: 140px;
+            float: left;
+            color:  rgb(189, 125, 30) ;
+            font-size: 25px;
+            margin-left: 17px;
+        }
+        tr{
+            width: 890px;
+            float: left;
+            
+        }
+        input{
+            width: 800px;
+            height: 50px;
+            margin-left: 50px;
+            padding: 10px;
+            float: left;
+            font-size: 25px;
+        }
+        button{
+            margin-left: 50px;
+            background-color: rgb(9, 141, 97);
+            padding: 10px;
+            width: 150px;
+        }
+
+
+        .phai{
+            width: 300px;
+            height: 550px;
+            float: left;
+        }
+
+        .baolink{
+            margin-left: 15px;
+            width: 280px;
+            height: 250px;
+            margin-bottom: 30px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            
+        }
+        h3{
+            font-size: 30px;
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+        .link {
+            float: left;
+            margin-left: 20px;
+            
+        }
+        .link>li{
+            padding: 5px;
+            font-size: 20px;
+        }
+
+
+        .baoinfo{
+            width: 280px;
+            height: 250px;
+            float: left;
+            margin-left: 15px;
+            background-color: aquamarine;
+        }
+        
+        #info{
+            width: 90px;
+            height: 60px;
+            float: left;
+            padding: 5px;
+            margin-right: 2px;
+            border: 1px solid black;
+        }
+        p{
+            width: 190px;
+            height: 100px;
+            margin-top: -72px;
+            padding: 10px; 
+            margin-left: 10px;
+            float: right;
+            text-align: justify;
+        }
+
+        .footer{
+            width: 1198px;
+            height: 57px;
+            background-color: aqua;
+            float: left;
+            position: relative;
+            font-size: 23px;
+        }
+
+        #gocphaitren{
+            width: 100px;
+            height: 20px;
+            float: right;
+            padding: 0px;
+           
+        }
+        #gocphaiduoi{
+            width: 100px;
+            height: 37px;
+            float: right;
+            padding: 0px;
+            
+        }
+        #goctraiduoi{
+            width: 100px;
+            height: 37px;
+            float: left;
+            background-repeat: repeat;
+            padding: 0px;
+           
+        }
+        #goctraitren{
+            width:  190px;
+            height: 20px;
+            float: left;
+            padding: 0px;
+            background-size: contain;
+            background-repeat: repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"><nav>AUTUMN TRAVEL COMPANY</nav></div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services </a></li>
+                <li><a href=""> Order</a></li>
+            </ul>
+        </div>
+        <div class="image"></div>
+        <div class="content">
+            <div class="trai">
+                <h1>Sign up for membership benefits</h1>
+                <table>
+                    <tr><th> Our philisophical are transparency, respect,
+                                formality and responsibility. Our stimulus is your enthusiasm. 
+                                Our motto is your satisfation.
+                        </th>
+                    </tr>
+                    <tr><td><input type="text" placeholder="Username"></td></tr><br>
+                    <tr><td><input type="text" placeholder="Email"></td></tr><br>
+                    <tr><td><input type="text" placeholder="Password"></td></tr><br>
+                    <tr><td><input type="text" placeholder="Retype Password"></td></tr><br><br><br>
+                    <tr><td><button>SIGN ME UP</button></td></tr>
+                </table>
+            </div>
+            <div class="phai">
+                <div class="baolink">
+                    <h3>Links</h3>
+                    <ul class="link">
+                        <li>Make your Own Tour</li>
+                        <li>Maldives Tours</li>
+                        <li>Nature & Adventure</li>
+                        <li>Europe Tours</li>
+                        <li>Rusia Tours</li>
+                    </ul>
+                </div>
+                <div class="baoinfo">         
+                    <h3>More Info</h3>
+                    <img src="../Bai3/leaf.png" alt="" id="info">
+                    <p>Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world</p>
+                </div>
+           </div>
+        </div>
+        <div class="footer">
+            2017 Software Engineering Department Test Date 16 Sep 2017
+            <img src="../Bai3/footer.png" alt="" id="goctraitren">
+            <img src="../Bai3/corner4.png" alt="" id="gocphaiduoi">
+            <img src="../Bai3/corner3.png" alt="" id="gocphaitren">
+            <img src="../Bai3/corner1.png" alt="" id="goctraiduoi">
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto ;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .tong{
+            width: 800px;
+            height: 700px;
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+        /* lon1 */
+        .dau{
+            width: 800px;
+            height: 50px;
+            background-color: white;
+            text-align: center;  
+        }
+        .dau>a{
+            box-shadow : 2px 10px 15px rgba(255, 0, 0, 0.7);
+            text-decoration: none;
+            color: red;
+            font-size: 35px;
+        }
+        /* lon2 */
+        .than{
+            width: 800px;
+            height: 40px;
+            background-color: aqua;
+        }
+        .a{
+            float: left;
+            width: 800px;
+            height: 40px;
+        }
+        .a>li{
+            float: left;
+            width: 137px;
+            height: 35px;
+            list-style: none;
+            text-align: center;
+            border-right: 2px solid blue;
+            padding: 8px;
+            margin: 3px 0px;
+        }
+        .a>li a{
+            text-decoration: none;
+           color: white;
+        }
+        .a>li:first-child{
+            text-align: right;
+        }
+        
+        .a>li:last-child{
+            width: 228px;
+           
+            border-right: none;
+        }
+        .a>li input{
+            width: 120px;
+        }
+        .a>li  button{
+            width: 19px;
+            height: 20px;
+        }
+        #img1 {
+            background-size: contain;
+            width: 50px;
+            height: 20px;
+        }
+        /* lon3 */
+        .body{
+            width: 800px;
+            height: 550px;
+            background-color: white;
+        }
+        /* lon3.1 */
+        .wrapper{
+            width: 200px;
+            height: 550px;
+            float: left;
+            /* background-color: aqua; */
+        }
+        .wrapper>ul{
+            width: 200px;
+            height: 200px;
+            float: left;
+            
+        }
+        .wrapper>ul li:first-child{
+            margin-top: 10px;
+        }
+        .wrapper>ul li{
+            list-style: none;
+            color: white;
+            width: 180px;
+            height: 25px;
+            background-color: rgb(255, 127, 148);
+            margin: 3px;
+            border-radius: 15px;
+            float: left;
+            padding-left: 15px;
+        }
+        .anh1{
+            width: 195px;
+            height: 130px;
+            background-image: url(../Bai1/company.png);
+            background-size: contain;
+            border-radius: 90px;
+            box-shadow: 9px 8px 8px rgb(255, 192, 217);
+            float: left;
+        }
+        /* lon3.2 */
+        .asi{
+            width: 400px;
+            height: 550px;
+            float: left;
+            background-color: brown;
+        }
+        .Starter{
+            width: 400px;
+            height: 30px;
+            text-align: center;
+        }
+        .Starter>a{
+            background-color: red;
+            font-size: 20px;
+            width: 400px;
+            text-decoration: none;
+            height: 20px;
+        }
+        .menu1{
+            width: 400px;
+            height: 80px;
+            
+        }
+        #input{
+            height: 46px;
+            width: 173px;
+            margin: 3px;
+        }
+        .menu1> li{
+            width: 400px;
+            height: 15px;
+            margin-left: 20px;
+            list-style: none;
+        }
+        .menu1> li a{
+           margin-left: 20px;
+           text-decoration: none;
+           
+        }
+        li:last-child{
+            list-style: none;
+        }
+        li:last-child a{
+            padding-left: 0px;
+            margin-left: 0px;
+            color: red;
+            
+        }
+        /* lon 3.3 */
+        .img{
+            width: 197px;
+            height: 550px;
+            background-color: bisque;
+            float: left;
+        }
+        
+        #icon{
+            width: 180px;
+            height: 500px;
+            /* float: left; */
+            background-color: black;
+        }
+        nav{
+            width: 180px;
+            height: 50px;
+            color: white;
+            font-size: 30px;
+
+        }
+         p{
+            width: 160px;
+            height: 30px;
+            color: white;
+            font-size: 15px;
+            
+            
+        }
+        
+        #img3{
+            width: 160px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+        }
+        #img4{
+            width: 160px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+        }
+        h1{
+            width: 160px;
+            height: 70px;
+            margin: 1px 10px;
+            float: left;
+            color: white;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tong">
+        <div class="dau"><a href="">EXAMPLE CAFE MENU</a></div>
+        <div class="than">
+            <ul class="a">
+                <li><a href="" class=""><img src="../Bai1/icons8-home-50.png" alt="" id="img1">  </a></li>
+                <li><a href="" class="">STARTER</a></li>
+                <li><a href="" class="">MAIN COURSES</a></li>
+                <li><a href="" class="">DESSERTS</a></li>
+                <li><input type="text"><button>Go</button></li>
+            </ul>
+            
+        </div>
+        <div class="body">
+            <div class="wrapper">
+                <ul>
+                    <li>Cafe Lattle</li>
+                    <li>Capuchino</li>
+                    <li>Occean Blue</li>
+                    <li>Ice-cream Cafe</li>
+                    <li></a>Online</li>
+                </ul>
+                <div class="anh1"></div>
+            </div>
+            <div class="asi">
+                <div class="Starter"><a href="">S&nbsp &nbsp &nbsp &nbsp t&nbsp a &nbspr&nbsp t&nbspe &nbspr</a></div>
+                <ul class="menu1">
+                    <li><a href="">Chesnut and Mushroom Goujons</a></li>
+                    <li><a href="">Goat Cheese</a></li>
+                    <li><a href="">HONEY SOY CHICKEN KEBABS</a></li>
+                    <li><a href="">Seafood Salad</a></li>
+                    <li><a href="">Back to Top</a></li>
+                </ul>
+                <div class="Starter"><a href="">D &nbspe &nbsps &nbsps &nbspe &nbspr &nbspt &nbsps</a></div>
+                <ul class="menu2">
+                    <li><a href="">Lemon Sorbet</a></li>
+                    <li><a href="">Chocolate Mud Pie</a></li>
+                    <li><a href="">Pecan Pie</a></li>
+                    <li><a href="">Selection of fine Cheeses from Around the World</a></li>
+                    <li><a href="">Back to Top</a></li>
+                </ul>
+                <div class="Starter"><a href="">I N F O R M A T I O N</a></div>
+                <form action="">
+                    <input id="input" type="text" placeholder="First Name">
+                    <input id="input" type="text" placeholder="Last Name">
+                    <input id="input" type="text" placeholder="Email">
+                    <input id="input" type="text" placeholder="TelePhone">
+                    <select name="USA" id="input">
+                        <option value="USA">USA</option>
+                    </select>
+                    <input type="checkbox" name="country" id="Vietnamese">
+                    <label >Vietnamese</label>
+                    <input type="checkbox" name="country" id="Foreigner">
+                    <label >Foreigner</label>
+                    <textarea name="Comment" id="Comment" cols="50" rows="5">Comment</textarea>
+                    <button>Submit</button>
+                    <button>Cancle</button>
+                </form>
+            </div>
+            <div class="img">
+                <div id="icon">
+                    <nav>Events</nav>
+                    <p>Regular Meetings</p>
+                    <img src="../Bai1/meeting.png" alt="" id="img3">
+                    <h1>Host your regular team meeting ỏ activities in <br>
+                        the comfort of your own private room. <a href="" style="color: red;">Read <br>
+                        more...</a></h1>
+                    <p>RProduct Launches</p>
+                    <img src="../Bai1/launch.png" alt="" id="img4">
+                    <h1>Launch your product with easw in a space that <br>
+                        truly fits its image. <a href="" style="color: red;">Read more...</a></h1>
+                </div>
+              </div>
+        </div>
+        <div class="footer">ABC Company - 12345678-abccoffee@gmail.com</div>
+    </div>
+
+</body>
+</html>

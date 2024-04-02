@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+        }
+        .wrapper{
+            width: 800px;
+            height: 890px;
+        }
+      .menu{
+        width: 800px;
+        height: 100px;
+        float: left;
+      }
+      li{
+        width: 150px;
+        height: 100px;
+        list-style: none;
+        float: left;
+      }
+      a{
+        text-decoration: none;
+      }
+      .submenu1{
+        width: 800px;
+        height: 100px;
+        display: none;
+      }
+      li>a:hover{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">customer</a>
+                <ul class="submenu1">
+                    <li><a href="">Manh</a></li>
+                    <li><a href="">mai</a></li>
+                    <li><a href="">mốt</a></li>
+                </ul>
+            </li>
+            <li><a href="#">detail</a></li>
+            <li><a href="#">vn</a></li>
+        </ul>
+    </div>
+</body>
+</html>

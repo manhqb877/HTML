@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Boostrap/CSS/bootstrap.min.css">
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script src="/Boostrap/JS/bootstrap.min.js"></script>
+    <style>
+        .border-danger{
+            color: red;
+        }
+        .mar{
+            margin-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h3 data-bs-toggle = "modal" data-bs-target = "#mymodal" >open modal</h3>
+            <div class="modal" id="mymodal">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <nav class="m-3">ĐĂNG NHẬP</nav>
+                            <nav>/</nav>
+                            <nav class="border-bottom border-danger m-3">ĐĂNG KÝ</nav>
+                            <button class="btn btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" >
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Họ tên">
+                              
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="col">
+                                        <select name="Chọn giới tính" id="gioitinh" class="form-select">
+                                            <option value="Chọn giới tính">Chọn giới tính</option>
+                                            <option value="Nam">Nam</option>
+                                            <option value="Nữ">Nữ</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Chọn ngày (đ/mm/yyyy)" class="form-control">
+                                            <span class="input-group-text ">
+                                                <img src="../tuan4/image/3bngaythang.jpg" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="../tuan4/image/3bmaxacthuc.jpg" alt="" width="208.5px" height="38px">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="" id="" placeholder="Nhập mã captchar" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <form action="">
+                                <div class="row mar">
+                                    <p>Tôi đã đọc và đồng ý với <a style="color: red;">CHÍNH SÁCH</a> của chương trình</p>
+                                </div>
+                                <div class="row mar">
+                                    <button class="btn btn-warning form-control">ĐĂNG KÝ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
